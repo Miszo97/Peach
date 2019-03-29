@@ -7,6 +7,10 @@
 
 
 class ClientConnector {
+public:
+    ClientConnector();
+
+    virtual ~ClientConnector();
 
 };
 

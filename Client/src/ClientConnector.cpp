@@ -3,3 +3,9 @@
 //
 
 #include "../include/ClientConnector.hpp"
+
+ClientConnector::ClientConnector() {}
+
+ClientConnector::~ClientConnector() {
+
+}

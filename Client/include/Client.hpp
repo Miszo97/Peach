@@ -7,6 +7,7 @@
 
 
 #include <iostream>
+#include "ClientConnector.hpp"
 
 class Client {
 public:
@@ -21,6 +22,7 @@ public:
     int login(const std::string& login, const std::string& password);
 
 private:
+    ClientConnector clientConnector;
 
 };
 
