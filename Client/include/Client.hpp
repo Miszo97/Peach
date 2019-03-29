@@ -6,9 +6,19 @@
 #define PEACH_CLIENT_HPP
 
 
+#include <iostream>
+
 class Client {
 public:
-    int login(const std::string login, const std::string password);
+    Client(){
+        std::cout<<"Starting client...\n";
+    }
+
+    virtual ~Client() {
+        std::cout<<"Client destructor...\n";
+    }
+
+    int login(const std::string& login, const std::string& password);
 
 private:
 
