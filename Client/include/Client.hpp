@@ -9,6 +9,15 @@
 #include <iostream>
 #include "ClientConnector.hpp"
 
+struct User{
+    User(const std::string& login, const std::string& password);
+
+    User();
+
+    std::string login;
+    std::string password;
+};
+
 class Client {
 public:
     Client(){
@@ -20,11 +29,15 @@ public:
     }
 
     int login(const std::string& login, const std::string& password);
+    void logout();
+    int sendMessage(const std::string& message);
 
 private:
     ClientConnector clientConnector;
+    User user;
 
 };
+
 
 
 #endif //PEACH_CLIENT_HPP
